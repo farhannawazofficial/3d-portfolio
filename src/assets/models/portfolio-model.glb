@@ -2,7 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 
 function Model() {
-  const { scene } = useGLTF("/assets/models/portfolio-model.glb");
+  const { scene } = useGLTF("/assets/models/portfolio-model.ms3d");
   return <primitive object={scene} />;
 }
 
