@@ -1,0 +1,19 @@
+import { Canvas } from "@react-three/fiber";
+import { useGLTF } from "@react-three/drei";
+
+function Model() {
+  const { scene } = useGLTF("/assets/models/portfolio-model.glb");
+  return <primitive object={scene} />;
+}
+
+function App() {
+  return (
+    <Canvas>
+      <ambientLight />
+      <pointLight position={[10, 10, 10]} />
+      <Model />
+    </Canvas>
+  );
+}
+
+export default App;

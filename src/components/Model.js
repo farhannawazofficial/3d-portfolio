@@ -1,5 +1,7 @@
 import React from "react";
 import { useGLTF } from "@react-three/drei";
+import { Html } from "@react-three/drei";
+
 
 const Model = ({ path }) => {
     const { scene } = useGLTF(path);
